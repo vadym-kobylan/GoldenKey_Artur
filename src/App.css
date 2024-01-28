@@ -102,7 +102,7 @@ nav {
   background-color: rgb(254, 189, 22);
   border-radius: 5px;
   text-align: center;
-  width: 150px;
+  width: max-content;
   font-weight: 500;
 }
 
@@ -707,14 +707,13 @@ footer {
 
   /* ================== HEADER ================== */
 
-.language-button{
-  font-size: 10px;
-}
+  .language-button {
+    font-size: 10px;
+  }
 
-.language-button:disabled {
-  background-color: none;
-}
-
+  .language-button:disabled {
+    background-color: none;
+  }
 
   nav {
     padding: 0;
@@ -733,11 +732,11 @@ footer {
     gap: 10px;
   }
 
-  .contact{
+  .contact {
     display: none;
   }
 
-  .contact.mobile{
+  .contact.mobile {
     display: block;
     width: fit-content;
   }
