@@ -1,14 +1,15 @@
 import React from 'react';
 import '../App.css';
+import { useTranslation } from 'react-i18next';
 
 const FormSection = () => {
+  const { t } = useTranslation();
   return (
     <section className="form_doubt">
-      <h3>Zögern Sie immer noch?</h3>
-      <p>Hinterlassen Sie eine Anfrage und wir führen eine kostenlose Beratung durch.</p>
+      <h3>{t("form.title")}</h3>
+      <p>{t("form.subtitle")}</p>
       <p>
-        Im Beratungsgespräch bieten wir Ihnen eine professionelle Beratung zum Schutz Ihrer Türen
-        und Schlösser.
+        {t("form.text")}
       </p>
 
       <div className="form-container">
@@ -21,7 +22,7 @@ const FormSection = () => {
             <input type="tel" id="phone" name="phone" placeholder="Your Phone Number" required />
           </div>
 
-          <button type="button">Lassen Sie sich beraten</button>
+          <button type="button">{t("form.button")}</button>
         </form>
       </div>
     </section>

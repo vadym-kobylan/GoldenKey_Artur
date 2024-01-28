@@ -6,42 +6,44 @@ import img2 from '../assets/image/gold_setting_icon.png';
 import img3 from '../assets/image/clock_side_icon.png';
 import img4 from '../assets/image/target_icon.png';
 import img5 from '../assets/image/gold_heart_side_icon.png';
+import { useTranslation } from 'react-i18next';
 
 const WhyUs = () => {
+  const { t } = useTranslation();
   const whyUsItem = [
     {
       img: img1,
-      title: 'Erfahrung und Verlässlichkeit',
-      sub: 'Über 10 jährige Erfahrung in Bereich Schlüsseldienst und Aufsperrdienst...',
+      title: t('whyUs.itemTitle1'),
+      sub: t('whyUs.itemText1'),
     },
     {
       img: img2,
-      title: 'Schadenfrei',
-      sub: 'Alle Aufsperrungen sind schadenfrei, sodass sie ihre Türe weite nutzen dürfen.',
+      title: t('whyUs.itemTitle2'),
+      sub: t('whyUs.itemText2'),
     },
     {
       img: img3,
-      title: 'Einsatzbereit 24/7',
-      sub: 'Unser Team ist für sie rund um die Uhr erreichbar, auch sonn und Feiertage...',
+      title: t('whyUs.itemTitle3'),
+      sub: t('whyUs.itemText3'),
     },
     {
       img: img4,
-      title: 'Schnelle Reaktion',
-      sub: 'Wir werden uns zeitnah nach Ihrer Anfrage bei Ihnen melden',
+      title: t('whyUs.itemTitle4'),
+      sub: t('whyUs.itemText4'),
     },
     {
       img: img5,
-      title: 'Kostenlose Beratung',
-      sub: 'Wir bieten professionelle und kostenlose Beratung zum Schutz Ihrer Türen und Schlösser',
+      title: t('whyUs.itemTitle5'),
+      sub: t('whyUs.itemText5'),
     },
   ];
 
   return (
-    <section className="why_us" id="warum-wir">
-      <h2>Warum wir</h2>
+    <section className="why_us" id={t('linksId.whyUs')}>
+      <h2>{t('whyUs.title')}</h2>
 
       {whyUsItem.map(({ sub, img, title }) => (
-        <div className="why_us_content">
+        <div className="why_us_content" key={img + title}>
           <div className="why-image-wrapper">
             <img src={img} alt={title} />
           </div>

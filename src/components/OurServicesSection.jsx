@@ -4,23 +4,26 @@ import '../App.css';
 import img1 from '../assets/image/gold_key_topright_icon.png';
 import img2 from '../assets/image/lock_side_icon.png';
 import img3 from '../assets/image/tool_side_icon.png';
+import { useTranslation } from 'react-i18next';
 
 const OurServicesSection = () => {
+  const { t } = useTranslation();
+
   const services = [
     {
       image: img1,
-      title: 'Schlüsseldienst',
-      text: 'Alle Schlüssel werden bei uns prompt und preiswert angefertigt, sodass sie nicht lange warten müssen…',
+      title: t('ourServices.itemTitle1'),
+      text: t('ourServices.itemText1'),
     },
     {
       image: img2,
-      title: 'Aufsperrdienst',
-      text: 'Unser professionelles Team macht ist schnell vor Ort, alle Türöffnungen werden Schadensfrei durchgeführt…',
+      title: t('ourServices.itemTitle2'),
+      text: t('ourServices.itemText2'),
     },
     {
       image: img3,
-      title: 'Reparaturen',
-      text: 'Wir übernehmen alle Schlösser Reparaturen, und beraten Sie gerne…',
+      title: t('ourServices.itemTitle3'),
+      text: t('ourServices.itemText3'),
     },
   ];
 
@@ -36,9 +39,9 @@ const OurServicesSection = () => {
   };
 
   return (
-    <section className="our_services" id="unsere-dienstleistungen">
+    <section className="our_services" id={t('linksId.ourServices')}>
       <div className="services_title">
-        <h2>Unsere Dienstleistungen</h2>
+        <h2>{t('ourServices.title')}</h2>
       </div>
       <div className="services_content">
         {services.map(({ image, title, text }, index) => (

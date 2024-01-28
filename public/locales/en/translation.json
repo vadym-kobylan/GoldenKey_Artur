@@ -1,0 +1,140 @@
+{
+  "header": {
+    "contactUs": "Contact us",
+    "title1": "Lockout Services in Vienna",
+    "title2": "& Key Service",
+    "subTitle1": "We are available for you",
+    "subTitle2": "Emergency opening of all types of door locks from €{{price}}"
+  },
+
+  "ourServices": {
+    "title": "Our Services",
+    "itemTitle1": "Locksmith service",
+    "itemTitle2": "Unlocking service",
+    "itemTitle3": "Repair of locks and keys",
+    "itemText1": "We provide key making services quickly and affordably. Regardless of the type of key, we will provide professional manufacturing at competitive prices. We also provide lost key recovery and copy services for your security and convenience.",
+    "itemText2": "We provide emergency opening of doors of any type and without damage. Our experienced craftsmen will quickly and professionally help open your door, regardless of the model or lock. Contact us in case of lost keys or unexpected situations, we will ensure a quick and safe opening.",
+    "itemText3": "We specialize in repairing locks and doors of any complexity. Our qualified craftsmen will ensure effective correction of any defects, ensuring the reliable safety of your premises. Contact us and we will make your doors and locks functional and safe."
+  },
+
+  "price": {
+    "priceTitle": "Price",
+    "priceList": [
+      {
+        "name": "Easy door opening (closed)",
+        "price": "from 75 €"
+      },
+      {
+        "name": "Double wing door",
+        "price": "120 €"
+      },
+      {
+        "name": "Security door (or security elements)",
+        "price": "150 €"
+      },
+      {
+        "name": "Telescopic opening (multi-fold or double-fold) surcharge",
+        "price": "60 €"
+      },
+      {
+        "name": "Surcharge on weekends/holidays",
+        "price": "49 €"
+      },
+      {
+        "name": "Evening surcharge 5:00 p.m. - 8:00 p.m",
+        "price": "39 €"
+      },
+      {
+        "name": "Night surcharge 8 p.m. - 8 a.m",
+        "price": "59 €"
+      },
+      {
+        "name": "Door opening (Locked)",
+        "price": "150 €"
+      },
+      {
+        "name": "Removal of a broken one key",
+        "price": "120 €"
+      },
+      {
+        "name": "Cancellation upon arrival - on site",
+        "price": "79 €"
+      },
+      {
+        "name": "Assembly / service",
+        "price": "120 €"
+      }
+    ]
+  },
+
+  "whyUs": {
+    "title": "Why us",
+    "itemTitle1": "Experience and Reliability",
+    "itemTitle2": "Accuracy of opening",
+    "itemTitle3": "Work 24/7",
+    "itemTitle4": "Reaction speed",
+    "itemTitle5": "Free consultation",
+    "itemText1": "More than 10 years of experience in emergency door opening and key making",
+    "itemText2": "We open doors without damaging locks or frames, preserving the integrity of your future door",
+    "itemText3": "We are always in touch - we work around the clock, including weekends and holidays",
+    "itemText4": "We will promptly go to you in the near future after your request",
+    "itemText5": "We provide professional advice and consultation on protecting your doors and locks"
+  },
+
+  "form": {
+    "title": "STILL HESITATING?",
+    "subtitle": "Leave a request and we will conduct a free consultation.",
+    "text": "During the consultation, we provide professional advice and consultation on the protection of your doors and locks.",
+    "button": "Get a consultation"
+  },
+
+  "faq": {
+    "title": "FAQ"
+  },
+
+  "footer": {
+    "contacts": "Contacts",
+    "addresses": "Addresses:",
+    "workTime": "Work schedule of workshops:",
+    "monFri": "Mon-Fri",
+    "sat": "Sat",
+    "sun": "Sun: closed",
+    "phone": "Phone numbers:"
+  },
+
+  "links": [
+    {
+      "name": "Our services",
+      "href": "#our-services"
+    },
+    {
+      "name": "Price",
+      "href": "#price"
+    },
+    {
+      "name": "Why us",
+      "href": "#why-us"
+    },
+    {
+      "name": "Reviews",
+      "href": "#reviews"
+    },
+    {
+      "name": "Districts",
+      "href": "#districts"
+    },
+    {
+      "name": "Impressum",
+      "href": "#impressum"
+    }
+  ],
+
+  "linksId": {
+    "ourServices": "our-services",
+    "price": "price",
+    "whyUs": "why-us",
+    "reviews": "reviews",
+    "districts": "districts",
+    "impressum": "impressum"
+  }
+}

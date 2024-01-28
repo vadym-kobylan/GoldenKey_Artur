@@ -1,13 +1,16 @@
 import React from 'react';
 import '../App.css';
+import { useTranslation } from 'react-i18next';
+import GoogleMap from './GoogleMap';
 
 const Footer = () => {
+  const { t } = useTranslation();
   return (
     <footer>
       <div className="footer_top">
         <div className="footer_left">
-          <h2>Kontakte</h2>
-          <h4>Adresse:</h4>
+          <h2>{t('footer.contacts')}</h2>
+          <h4>{t('footer.addresses')}</h4>
           <ul>
             <li>
               <a href="https://maps.app.goo.gl/mkyAV3xZjyjtZTmj6" target="_blank">
@@ -21,13 +24,13 @@ const Footer = () => {
             </li>
             <li></li>
           </ul>
-          <h4>Ladenöffnungszeiten:</h4>
+          <h4>{t('footer.workTime')}</h4>
           <ul>
-            <li>Mon-Fr: 09:00-18:00</li>
-            <li>subota: 10:00-15:00</li>
-            <li>nedila: geschlossen</li>
+            <li>{t('footer.monFri')}: 08:00-18:00</li>
+            <li>{t('footer.sat')}: 09:00-13:00</li>
+            <li>{t('footer.sun')}</li>
           </ul>
-          <h4>Telefonnummer:</h4>
+          <h4>{t('footer.phone')}</h4>
           <ul>
             <li>
               <a href="tel:+43 676 5409 213">+43 676 5409 213</a>
@@ -45,9 +48,11 @@ const Footer = () => {
             </li>
           </ul>
         </div>
-        <div className="footer_right">{/* tut is google map  */}</div>
+        <div className="footer_right">
+          <GoogleMap />
+        </div>
       </div>
-      <div id="impressum">
+      <div className="impressum" id={t('linksId.impressum')}>
         <h4>IMPRESSUM</h4>
         <p>
           Aufsperrkönig <br />

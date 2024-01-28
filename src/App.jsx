@@ -12,7 +12,11 @@ import FixedCall from './components/FixedCall';
 import Footer from './components/Footer';
 import ScrollToAnchor from './ScrollToAnchor';
 
+import './assets/i18n.js';
+
+
 function App() {
+  
   return (
     <>
       <ScrollToAnchor />
@@ -39,7 +43,7 @@ function App() {
         <div></div>
       </div>
 
-      {/* <FAQSection /> */}
+      <FAQSection />
 
       <Footer />
     </>

@@ -3,9 +3,15 @@ import '../App.css';
 import logo from '../assets/image/LOGO.png';
 import { Link } from 'react-router-dom';
 import Popup from './Popup';
+import i18next from 'i18next';
+import { useTranslation } from 'react-i18next';
 
 const Header = () => {
+  const { t } = useTranslation();
+
   const [isPopupOpen, setIsPopupOpen] = useState(false);
+
+  const [activeLanguageTab, setActiveLanguageTab] = useState(i18next.language);
 
   useEffect(() => {
     if (isPopupOpen) {
@@ -23,30 +29,32 @@ const Header = () => {
     setIsPopupOpen(false);
   };
 
-  const links = [
+  const links = t('links', { returnObjects: true });
+
+  console.log(t('links', { returnObjects: true }));
+
+  const setSelectedLanguages = (event) => {
+    const option = selectLanguages.find((option) => option.value === event.target.value);
+    setActiveLanguageTab(option.value);
+    i18next.changeLanguage(option.value);
+  };
+
+  const selectLanguages = [
     {
-      name: 'Unsere Dienstleistungen',
-      href: '#unsere-dienstleistungen',
+      label: 'Deutsch',
+      value: 'de',
     },
     {
-      name: 'Preis',
-      href: '#preis',
+      label: 'English',
+      value: 'en',
     },
     {
-      name: 'Warum wir',
-      href: '#warum-wir',
+      label: 'Українська',
+      value: 'uk',
     },
     {
-      name: 'Bewertungen',
-      href: '#bewertungen',
-    },
-    {
-      name: 'Einsatzorte',
-      href: '#einsatzorte',
-    },
-    {
-      name: 'Impressum',
-      href: '#impressum',
+      label: 'русский',
+      value: 'ru',
     },
   ];
 
@@ -68,8 +76,22 @@ const Header = () => {
           {/* <img src="image/phone_missed_side_icon.png" alt="">  */}
           <div className="right-nav">
             <a href="tel:+43 676 5409213" className="contact">
-              Kontaktiere uns
+              {t('header.contactUs')}
             </a>
+            <select
+              className="select-languages"
+              onChange={setSelectedLanguages}
+              defaultValue={i18next.language}>
+              {selectLanguages.map(({ label, value }) => (
+                <option
+                  disabled={activeLanguageTab === value}
+                  key={value}
+                  value={value}
+                  className="language-button">
+                  {label}
+                </option>
+              ))}
+            </select>
             <div
               className={isPopupOpen ? 'burger-button active' : 'burger-button'}
               onClick={openPopup}>
@@ -81,10 +103,11 @@ const Header = () => {
       <header>
         <div className="header">
           <div className="header_text">
-            <h1>Schlüsseldienst Wien</h1>
-            <h1>& Aufsperrdienst</h1>
+            <h1>{t("header.title1")}</h1>
+            <h1>{t("header.title2")}</h1>
             <h4>
-              Wir sind für sie erreichbar 24/7 <br /> Zugefallene einfache Tür öffnen ab 75€
+              {t("header.subTitle1")} <strong className="time-color">24/7</strong> <br />{' '}
+              {t("header.subTitle2", {price:75})}
             </h4>
             <a href="tel:+43 676 5409213">+43 676 5409213</a>
           </div>

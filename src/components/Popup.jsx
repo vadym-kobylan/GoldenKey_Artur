@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import './Popup.css';
+import { useTranslation } from 'react-i18next';
 
 const Popup = ({ onClose, isPopupOpen, links }) => {
   const menuRef = useRef();
@@ -19,6 +20,8 @@ const Popup = ({ onClose, isPopupOpen, links }) => {
     };
   });
 
+  const { t } = useTranslation();
+
   return (
     <div className="active">
       <div className={isPopupOpen ? 'popup-container active' : 'popup-container inactive'}>
@@ -29,6 +32,10 @@ const Popup = ({ onClose, isPopupOpen, links }) => {
                 {name}
               </Link>
             ))}
+
+          <a href="tel:+43 676 5409213" className="contact mobile">
+            {t('header.contactUs')}
+          </a>
 
           <div className="close-icon" onClick={onClose}>
             <div className="close-line"></div>

@@ -1,7 +1,9 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import '../App.css';
 
 const DistrictsSection = () => {
+  const { t } = useTranslation();
   const disctricts = [
     {
       id: 'Aufsperrdienst 1010',
@@ -97,7 +99,7 @@ const DistrictsSection = () => {
     },
   ];
   return (
-    <section className="districts" id="einsatzorte">
+    <section className="districts" id={t('linksId.districts')}>
       <h2>Einsatzorte</h2>
       <div>
         {disctricts.map(({ id, name }) => (

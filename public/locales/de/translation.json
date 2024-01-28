@@ -1,0 +1,140 @@
+{
+  "header": {
+    "contactUs": "Kontaktiere uns",
+    "title1": "Schlüsseldienst Wien",
+    "title2": "& Aufsperrdienst",
+    "subTitle1": "Wir sind für sie erreichbar",
+    "subTitle2": "Zugefallene einfache Tür öffnen ab {{price}}€"
+  },
+
+  "ourServices": {
+    "title": "Unsere Dienstleistungen",
+    "itemTitle1": "Schlüsseldienst",
+    "itemTitle2": "Aufsperrdienst",
+    "itemTitle3": "Reparaturen",
+    "itemText1": "Wir bieten einen schnellen und erschwinglichen Schlüsseldienst an. Unabhängig von der Art des Schlüssels bieten wir professionelle Herstellung zu günstigen Preisen an. Wir bieten auch Dienstleistungen zur Wiederherstellung verlorener Schlüssel und zur Erstellung von Kopien zur Sicherheit und Bequemlichkeit an.",
+    "itemText2": "Wir bieten einen Notöffnungsservice für Türen jeglicher Art ohne Beschädigung an. Unsere erfahrenen Handwerker helfen Ihnen schnell und professionell dabei, Ihre Türen zu öffnen, unabhängig von Modell oder Schlosstyp. Kontaktieren Sie uns im Falle von Schlüsselverlust oder unvorhergesehenen Situationen; wir garantieren eine schnelle und sichere Öffnung.",
+    "itemText3": "Wir sind spezialisiert auf die Reparatur von Schlössern und Türen jeder Komplexität. Unsere qualifizierten Handwerker werden jegliche Defekte effektiv beheben und damit die zuverlässige Sicherheit Ihrer Räumlichkeiten gewährleisten. Kontaktieren Sie uns, und wir werden Ihre Türen und Schlösser funktionsfähig und sicher machen."
+  },
+
+  "price": {
+    "priceTitle": "Preis",
+    "priceList": [
+      {
+        "name": "Einfache Türöffnung ( Zugefallen )",
+        "price": "ab 75 €"
+      },
+      {
+        "name": "Doppelflügeltür",
+        "price": "120 €"
+      },
+      {
+        "name": "Sicherheitstüre (oder Sicherheitselemente)",
+        "price": "150 €"
+      },
+      {
+        "name": "Teleskopöffnung (mehrere fallen oder doppelfalz) Zuschlag",
+        "price": "60 €"
+      },
+      {
+        "name": "Zuschlag am Wochenende / Feiertag",
+        "price": "49 €"
+      },
+      {
+        "name": "Abendzuschlag 17,00 - 20.00 Uhr",
+        "price": "39 €"
+      },
+      {
+        "name": "Nachtzuschlag 20.00 - 08.00 Uhr",
+        "price": "59 €"
+      },
+      {
+        "name": "Türöffnung (Verschlossen)",
+        "price": "150 €"
+      },
+      {
+        "name": "Entfernung eines abgebrochenen Schlüssels",
+        "price": "120 €"
+      },
+      {
+        "name": "Stornierung bei Anfahrt - vor Ort",
+        "price": "79 €"
+      },
+      {
+        "name": "Montage / Service",
+        "price": "120 €"
+      }
+    ]
+  },
+
+  "whyUs": {
+    "title": "Warum wir",
+    "itemTitle1": "Erfahrung und Verlässlichkeit",
+    "itemTitle2": "Schadenfrei",
+    "itemTitle3": "Einsatzbereit 24/7",
+    "itemTitle4": "Schnelle Reaktion",
+    "itemTitle5": "Kostenlose Beratung",
+    "itemText1": "Über 10 jährige Erfahrung in Bereich Schlüsseldienst und Aufsperrdienst...",
+    "itemText2": "Alle Aufsperrungen sind schadenfrei, sodass sie ihre Türe weite nutzen dürfen.",
+    "itemText3": "Unser Team ist für sie rund um die Uhr erreichbar, auch sonn und Feiertage...",
+    "itemText4": "Wir werden uns zeitnah nach Ihrer Anfrage bei Ihnen melden",
+    "itemText5": "Wir bieten professionelle und kostenlose Beratung zum Schutz Ihrer Türen und Schlösser"
+  },
+
+  "form": {
+    "title": "Zögern Sie immer noch?",
+    "subtitle": "Hinterlassen Sie eine Anfrage und wir führen eine kostenlose Beratung durch.",
+    "text": "Im Beratungsgespräch bieten wir Ihnen eine professionelle Beratung zum Schutz Ihrer Türen und Schlösser.",
+    "button": "Lassen Sie sich beraten"
+  },
+
+  "faq": {
+    "title": "Häufig gestellte Fragen"
+  },
+
+  "footer": {
+    "contacts": "Kontakte",
+    "addresses": "Adresse:",
+    "workTime": "Ladenöffnungszeiten:",
+    "monFri": "Mon-Fr",
+    "sat": "Sam",
+    "sun": "Son: geschlossen",
+    "phone": "Telefonnummer:"
+  },
+
+  "links": [
+    {
+      "name": "Unsere Dienstleistungen",
+      "href": "#unsere-dienstleistungen"
+    },
+    {
+      "name": "Preis",
+      "href": "#preis"
+    },
+    {
+      "name": "Warum wir",
+      "href": "#warum-wir"
+    },
+    {
+      "name": "Bewertungen",
+      "href": "#bewertungen"
+    },
+    {
+      "name": "Einsatzorte",
+      "href": "#einsatzorte"
+    },
+    {
+      "name": "Impressum",
+      "href": "#impressum"
+    }
+  ],
+
+  "linksId": {
+    "ourServices": "unsere-dienstleistungen",
+    "price": "preis",
+    "whyUs": "warum-wir",
+    "reviews": "bewertungen",
+    "districts": "einsatzorte",
+    "impressum": "impressum"
+  }
+}
