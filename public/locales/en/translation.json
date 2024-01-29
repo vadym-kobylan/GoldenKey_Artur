@@ -88,8 +88,29 @@
     "button": "Get a consultation"
   },
 
+  "reviewsTitle": "Reviews",
+  "districtsTitle": "Districts",
+
   "faq": {
-    "title": "FAQ"
+    "title": "FAQ",
+    "faqItems": [
+      {
+        "question": "How quickly will the craftsman come?",
+        "answer": "We normally aim to get to you as quickly as possible, usually within 20-30 minutes of receiving your call."
+      },
+      {
+        "question": "Will the doors be damaged when opened?",
+        "answer": "We do our best to avoid any damage to your door or lock during the opening process. In 99% of cases the doors remain undamaged!"
+      },
+      {
+        "question": "How can I pay for the services?",
+        "answer": "You can pay in cash or use cashless payment methods such as credit cards or e-wallets. After completing the work, our craftsman will issue you an invoice indicating the amount and method of payment."
+      },
+      {
+        "question": "Do I have to show ID?",
+        "answer": "If the technician is on site, you must identify yourself (photo ID)"
+      }
+    ]
   },
 
   "footer": {

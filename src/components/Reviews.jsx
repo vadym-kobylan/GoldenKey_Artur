@@ -74,7 +74,7 @@ const Reviews = () => {
 
   return (
     <section className="Reviews" id={t('linksId.reviews')}>
-      <h3>Bewertungen</h3>
+      <h3>{t('reviewsTitle')}</h3>
       <div className="review">
         <Slider {...settings}>
           {reviews.map(({ name, text, rating }, index) => (

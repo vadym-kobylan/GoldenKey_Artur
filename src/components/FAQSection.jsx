@@ -4,27 +4,9 @@ import '../App.css';
 
 const FAQSection = () => {
   const { t } = useTranslation();
-  const questionList = [
-    {
-      question: 'Wie schnell wird der Handwerker kommen?',
-      answer:
-        'Normalerweise bemühen wir uns, so schnell wie möglich bei Ihnen zu sein, in der Regel innerhalb von 20-30 Minuten nach Erhalt Ihres Anrufs.',
-    },
-    {
-      question: 'Werden die Türen beim Öffnen beschädigt?',
-      answer:
-        'Wir tun unser Bestes, um jegliche Beschädigungen an Ihrer Tür oder dem Schloss während des Öffnungsvorgangs zu vermeiden. In 99% der Fälle bleiben die Türen unbeschädigt!',
-    },
-    {
-      question: 'Wie kann ich für die Dienstleistungen bezahlen?',
-      answer:
-        'Sie können bar bezahlen oder bargeldlose Zahlungsmethoden wie Kreditkarten oder E-Wallets nutzen. Nach Abschluss der Arbeiten wird unser Handwerker Ihnen eine Rechnung ausstellen, auf der der Betrag und die Zahlungsmethode angegeben sind.',
-    },
-    {
-      question: 'Muss man sich Ausweisen?',
-      answer: 'Wenn der Techniker vor Ort ist, muss man sich ausweisen ( lichtbildausweis)',
-    },
-  ];
+  const questionList = t('faq.faqItems', { returnObjects: true });
+
+
 
   const [activeItem, setActiveItem] = useState([0]);
 

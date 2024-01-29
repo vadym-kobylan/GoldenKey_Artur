@@ -100,7 +100,7 @@ const DistrictsSection = () => {
   ];
   return (
     <section className="districts" id={t('linksId.districts')}>
-      <h2>Einsatzorte</h2>
+      <h2>{t('districtsTitle')}</h2>
       <div>
         {disctricts.map(({ id, name }) => (
           <div key={id + name}>

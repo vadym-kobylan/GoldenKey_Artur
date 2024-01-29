@@ -33,7 +33,7 @@ const Popup = ({ onClose, isPopupOpen, links }) => {
               </Link>
             ))}
 
-          <a href="tel:+43 676 5409213" className="contact mobile">
+          <a href="tel:+436765409213" className="contact mobile">
             {t('header.contactUs')}
           </a>
 

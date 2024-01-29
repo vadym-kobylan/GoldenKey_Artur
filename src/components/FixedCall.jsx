@@ -4,9 +4,9 @@ import phoneImage from '../assets/image/phone_missed_side_icon.png';
 
 const FixedCall = () => {
   return (
-    <div id="fixed_call">
+    <a href='tel:+436765409213' id="fixed_call">
       <img src={phoneImage} alt="" />
-    </div>
+    </a>
   );
 };
 

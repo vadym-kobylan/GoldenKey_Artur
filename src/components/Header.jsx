@@ -31,8 +31,6 @@ const Header = () => {
 
   const links = t('links', { returnObjects: true });
 
-  console.log(t('links', { returnObjects: true }));
-
   const setSelectedLanguages = (event) => {
     const option = selectLanguages.find((option) => option.value === event.target.value);
     setActiveLanguageTab(option.value);
@@ -75,7 +73,7 @@ const Header = () => {
           </ul>
           {/* <img src="image/phone_missed_side_icon.png" alt="">  */}
           <div className="right-nav">
-            <a href="tel:+43 676 5409213" className="contact">
+            <a href="tel:+436765409213" className="contact">
               {t('header.contactUs')}
             </a>
             <select
@@ -103,11 +101,11 @@ const Header = () => {
       <header>
         <div className="header">
           <div className="header_text">
-            <h1>{t("header.title1")}</h1>
-            <h1>{t("header.title2")}</h1>
+            <h1>{t('header.title1')}</h1>
+            <h1>{t('header.title2')}</h1>
             <h4>
-              {t("header.subTitle1")} <strong className="time-color">24/7</strong> <br />{' '}
-              {t("header.subTitle2", {price:75})}
+              {t('header.subTitle1')} <strong className="time-color">24/7</strong> <br />{' '}
+              {t('header.subTitle2', { price: 75 })}
             </h4>
             <a href="tel:+43 676 5409213">+43 676 5409213</a>
           </div>

@@ -220,11 +220,28 @@ header {
   max-height: 0px;
   overflow: hidden;
   transition: max-height 0.3s ease-out;
+  margin-bottom: 20px;
 }
 
-.services_box_text.open {
+.services_box.active .services_box_text {
   max-height: 500px;
   transition: max-height 0.4s ease-in;
+}
+
+.services__bottom-arrow {
+  width: 40px;
+  margin: 0 auto;
+  display: block;
+  fill: #fcfcfc;
+  transition: all 0.2s ease;
+}
+
+.services_box:hover .services__bottom-arrow {
+  fill: #febd16;
+}
+
+.services_box.active .services__bottom-arrow {
+  transform: rotateX(180deg);
 }
 
 /* ================== PRICE ================== */
@@ -561,10 +578,15 @@ header {
   margin-bottom: 20px;
 }
 
+.question-block:hover .question-top {
+  color: rgb(254, 188, 22);
+}
+
 .question-top {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  transition: color 0.15s ease-in-out;
 }
 
 .qestion-icon {
@@ -593,9 +615,8 @@ header {
 /* ================== FIXED CALL ================== */
 
 #fixed_call {
-  position: absolute;
-  z-index: 9.999 !important;
   position: fixed;
+  z-index: 9;
   left: 89%;
   top: 82%;
   list-style: none;
@@ -608,6 +629,11 @@ header {
   height: 100%;
   padding: 10px;
   border-radius: 100%;
+  transition: all 0.2s linear;
+}
+
+#fixed_call:hover img {
+  background-color: rgba(208, 162, 47, 1);
 }
 
 /* ================== FOOTER ================== */
@@ -621,7 +647,7 @@ footer {
 
 .footer_top {
   display: flex;
-  gap: 20px;
+  gap: 100px;
   padding-bottom: 80px;
   justify-content: space-between;
   padding: 0 70px 80px 70px;
@@ -652,9 +678,7 @@ footer {
 }
 
 .footer_right {
-  margin-top: 60px;
   flex-grow: 1;
-  max-width: 50%;
   overflow: hidden;
 }
 
@@ -808,7 +832,7 @@ footer {
 
   .header_text h4 {
     font-size: 0.8em;
-    margin: 6em 0 2.5em 0px;
+    margin: 20px 0;
     line-height: 1.6em;
   }
 
@@ -948,15 +972,24 @@ footer {
   .districts > div div {
     width: 150px;
     margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
   }
   .districts > div div p {
-    font-size: 10px;
+    font-size: 13px;
+    font-weight: bold;
   }
 
   /* ================== FAQ ================== */
 
   #FAQ {
     padding: 100px 20px;
+  }
+
+  .question-block:hover .question-top {
+    color: black;
   }
 
   /* ================== FOOTER ================== */

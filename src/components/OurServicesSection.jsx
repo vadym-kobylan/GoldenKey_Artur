@@ -6,6 +6,12 @@ import img2 from '../assets/image/lock_side_icon.png';
 import img3 from '../assets/image/tool_side_icon.png';
 import { useTranslation } from 'react-i18next';
 
+import BottomArrow from './BottomArrow';
+
+// import { ReactComponent as ArrowIcon } from './BottomArrow';
+
+import arrowImg from '../assets/image/down-arrow.svg';
+
 const OurServicesSection = () => {
   const { t } = useTranslation();
 
@@ -47,18 +53,14 @@ const OurServicesSection = () => {
         {services.map(({ image, title, text }, index) => (
           <div
             key={title + text}
-            className="services_box"
+            className={activeItem.includes(index) ? 'services_box active' : 'services_box'}
             onClick={() => {
               handleUpdate(index);
             }}>
             <img src={image} alt="" />
             <h3>{title}</h3>
-            <p
-              className={
-                activeItem.includes(index) ? 'services_box_text open' : 'services_box_text'
-              }>
-              {text}
-            </p>
+            <p className="services_box_text">{text}</p>
+            <BottomArrow className={'services__bottom-arrow'} />
           </div>
         ))}
       </div>
