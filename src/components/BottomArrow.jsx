@@ -2,12 +2,10 @@ import React from 'react';
 
 const BottomArrow = (props) => {
   return (
-    <svg
-      className={props.className}
-      viewBox="0 0 330.002 330.002">
-      <g id="SVGRepo_bgCarrier" stroke-width="0" />
+    <svg className={props.className} viewBox="0 0 330.002 330.002">
+      <g id="SVGRepo_bgCarrier" strokeWidth="0" />
 
-      <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" />
+      <g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round" />
 
       <g id="SVGRepo_iconCarrier">
         <path

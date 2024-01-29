@@ -6,8 +6,6 @@ const FAQSection = () => {
   const { t } = useTranslation();
   const questionList = t('faq.faqItems', { returnObjects: true });
 
-
-
   const [activeItem, setActiveItem] = useState([0]);
 
   const handleUpdate = (index) => {

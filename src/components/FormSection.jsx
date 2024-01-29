@@ -8,25 +8,30 @@ const FormSection = () => {
   const [name, setName] = useState('');
   const [phoneNumber, setPhoneNumber] = useState('');
 
-  // const [userInfo, setUserInfo] = useState({});
+  const [errorMessage, setErrorMessage] = useState('');
 
   const handleClick = () => {
-    try {
-      fetch('http://localhost:8080/message/send', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-          name: name,
-          phoneNumber: phoneNumber,
-        }),
-      });
+    if (name === '' || phoneNumber === '') {
+      setErrorMessage(t('form.errorMessage'));
+    } else {
+      try {
+        fetch('http://localhost:8080/message/send', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({
+            name,
+            phoneNumber,
+          }),
+        });
 
-      setName('');
-      setPhoneNumber('');
-    } catch (error) {
-      console.error(error);
+        setName('');
+        setPhoneNumber('');
+        setErrorMessage('');
+      } catch (error) {
+        console.error(error);
+      }
     }
   };
 
@@ -61,11 +66,15 @@ const FormSection = () => {
               required
             />
           </div>
+          <p className={errorMessage === '' ? 'errorMessage phone' : 'errorMessage show phone'}>
+            {errorMessage}
+          </p>
 
           <button onClick={handleClick} type="button">
             {t('form.button')}
           </button>
         </form>
+        <p className={errorMessage === '' ? 'errorMessage' : 'errorMessage show'}>{errorMessage}</p>
       </div>
     </section>
   );

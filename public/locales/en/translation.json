@@ -85,7 +85,8 @@
     "title": "STILL HESITATING?",
     "subtitle": "Leave a request and we will conduct a free consultation.",
     "text": "During the consultation, we provide professional advice and consultation on the protection of your doors and locks.",
-    "button": "Get a consultation"
+    "button": "Get a consultation",
+    "errorMessage": "Please fill in a valid value for all fields"
   },
 
   "reviewsTitle": "Reviews",

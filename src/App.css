@@ -422,6 +422,25 @@ header {
   cursor: pointer;
 }
 
+.errorMessage {
+  color: #ff3333;
+  max-width: 400px;
+  margin: 0 auto;
+  line-height: normal !important;
+  padding: 10px 0;
+  border: 1px solid #ff3333;
+  background-color: rgba(255, 129, 129, 0.473);
+  display: none;
+}
+
+.errorMessage.show {
+  display: block;
+}
+
+.errorMessage.phone {
+  display: none;
+}
+
 /* ================== REVIEWS ================== */
 
 .Reviews {
@@ -954,6 +973,21 @@ footer {
 
   .form_doubt h3 {
     line-height: 40px;
+  }
+  .errorMessage {
+    display: none;
+  }
+
+  .errorMessage.show {
+    display: none;
+  }
+
+  .errorMessage.phone {
+    display: none;
+  }
+
+  .errorMessage.show.phone {
+    display: block;
   }
 
   /* ================== DISTRICTS ================== */

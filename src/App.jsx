@@ -14,9 +14,7 @@ import ScrollToAnchor from './ScrollToAnchor';
 
 import './assets/i18n.js';
 
-
 function App() {
-  
   return (
     <>
       <ScrollToAnchor />

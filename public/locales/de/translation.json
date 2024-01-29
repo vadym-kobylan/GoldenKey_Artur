@@ -85,7 +85,8 @@
     "title": "Zögern Sie immer noch?",
     "subtitle": "Hinterlassen Sie eine Anfrage und wir führen eine kostenlose Beratung durch.",
     "text": "Im Beratungsgespräch bieten wir Ihnen eine professionelle Beratung zum Schutz Ihrer Türen und Schlösser.",
-    "button": "Lassen Sie sich beraten"
+    "button": "Lassen Sie sich beraten",
+    "errorMessage": "Bitte geben Sie für alle Felder einen gültigen Wert ein"
   },
 
   "reviewsTitle": "Bewertungen",
