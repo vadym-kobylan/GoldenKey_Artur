@@ -1,17 +1,21 @@
 import React, { useState, useEffect } from 'react';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
+
 import '../App.css';
+
 import logo from '../assets/image/LOGO.png';
-import { Link } from 'react-router-dom';
 import Popup from './Popup';
 import i18next from 'i18next';
 import { useTranslation } from 'react-i18next';
 
 const Header = () => {
+  const location = useLocation();
+  const navigate = useNavigate();
   const { t } = useTranslation();
 
   const [isPopupOpen, setIsPopupOpen] = useState(false);
 
-  const [activeLanguageTab, setActiveLanguageTab] = useState(i18next.language);
+  const [activeLanguageTab, setActiveLanguageTab] = useState(i18next.resolvedLanguage);
 
   useEffect(() => {
     if (isPopupOpen) {
@@ -32,9 +36,10 @@ const Header = () => {
   const links = t('links', { returnObjects: true });
 
   const setSelectedLanguages = (event) => {
-    const option = selectLanguages.find((option) => option.value === event.target.value);
+    const option = selectLanguages.find((option) => option.value.includes(event.target.value));
     setActiveLanguageTab(option.value);
     i18next.changeLanguage(option.value);
+    navigate(`/${option.value}`);
   };
 
   const selectLanguages = [
@@ -79,11 +84,11 @@ const Header = () => {
             <select
               className="select-languages"
               onChange={setSelectedLanguages}
-              defaultValue={i18next.language}>
+              defaultValue={i18next.resolvedLanguage}>
               {selectLanguages.map(({ label, value }) => (
                 <option
-                  disabled={activeLanguageTab === value}
                   key={value}
+                  disabled={activeLanguageTab === value}
                   value={value}
                   className="language-button">
                   {label}

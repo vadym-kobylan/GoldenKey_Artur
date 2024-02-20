@@ -15,7 +15,7 @@ const FormSection = () => {
       setErrorMessage(t('form.errorMessage'));
     } else {
       try {
-        fetch('http://localhost:8080/message/send', {
+        fetch('https://api.goldenkey-wien.com/message/send', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
